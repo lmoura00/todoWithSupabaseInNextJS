@@ -4,9 +4,9 @@
 
 
 html{
-    @apply h-full
+  @apply h-full
 }
 
-body{
-    @apply h-full antialiased
+body {
+  @apply h-full antialiased
 }
