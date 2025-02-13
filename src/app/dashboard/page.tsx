@@ -10,14 +10,17 @@ const DashboardPage = async () => {
   return (
     <div className="h-full bg-gray-300">
     <div className="p-10 flex flex-col justify-center gap-10">
-      <div>
+      <div className="flex justify-between">
+        <div>
+
       <form action={InsertTask} className="flex h-full justify-between">
-        <input type="text" name="task" placeholder="Digite a sua tarefa..." className="h-14 min-w-72  rounded px-2"/>
+        <input type="text" name="task" placeholder="Digite a sua tarefa..." className="h-14 min-w-72  rounded px-2 mr-2"/>
         <button type="submit" className="text-green-100 h-14 bg-green-500 font-bold px-3 rounded"> 
           Cadastrar
         </button>
       </form>
-      <button onClick={SignOut}>
+        </div>
+      <button onClick={SignOut} className="text-gray-100 h-14 bg-gray-500 font-bold px-3 rounded">
         SignOut
       </button>
 
